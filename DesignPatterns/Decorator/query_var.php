@@ -9,14 +9,20 @@ include "Query/SurfaceQuery.php";
 include "Query/TypeQuery.php";
 include "Query/RegionQuery.php";
 
+$queries = [
+    "price"=>PriceQuery::class,
+    "size"=>SurfaceQuery::class,
+    "type"=>TypeQuery::class,
+    "zone"=>RegionQuery::class,
+];
 
 $search = new Search();
 
-//$search = new PriceQuery(new SizeQuery(new TypeQuery(new ZoneQuery($search))));
-
-$search = new PriceQuery($search);
-$search = new SurfaceQuery($search);
-$search = new TypeQuery($search);
-$search = new RegionQuery($search);
+foreach($queries as $var=>$classname)
+{
+    if(isset($_GET[$var])){
+        $search = new $classname($search);
+    }
+}
 
 var_dump($search->getQueries());
