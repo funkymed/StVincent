@@ -9,8 +9,7 @@ A bunch of examples of Design Pattern by [Cyril Pereira](cyril.pereira@gmail.com
 __Example__ : [DesignPatterns/Autoload](DesignPatterns/Autoload)
 
 [PSR-0](https://www.php-fig.org/psr/psr-0) (deprecated)   
-[PSR-4](https://www.php-fig.org/psr/psr-4)
-
+[Autoload by Grafikart](https://www.grafikart.fr/formations/programmation-objet-php/autoload)
 
 ### Decorator
 
