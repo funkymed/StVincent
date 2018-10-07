@@ -11,9 +11,9 @@ include "Query/RegionQuery.php";
 
 $queries = [
     "price"=>PriceQuery::class,
-    "size"=>SurfaceQuery::class,
+    "surface"=>SurfaceQuery::class,
     "type"=>TypeQuery::class,
-    "zone"=>RegionQuery::class,
+    "region"=>RegionQuery::class,
 ];
 
 $search = new Search();
