@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class SingletonAbstract
+ * Class SingletonAbstract.
  */
 class SingletonAbstract
 {
@@ -22,6 +22,7 @@ class SingletonAbstract
         if (is_null(self::$_instance)) {
             self::$_instance = new static();
         }
+
         return self::$_instance;
     }
 }

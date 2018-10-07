@@ -2,21 +2,20 @@
 
 /**
  * Author Cyril Pereira
- * Bootstrap microframework
+ * Bootstrap microframework.
  */
-
-include "Request.php";
-include "Controller/ControllerAbstract.php";
-include "Controller/IndexController.php";
+include 'Request.php';
+include 'Controller/ControllerAbstract.php';
+include 'Controller/IndexController.php';
 
 $request = Request::getInstance();
 
 $controller = $request->get('controller', 'index');
-$className = UCFirst($controller) . "Controller";
+$className = UCFirst($controller).'Controller';
 
 $rendered = false;
 
-if (file_exists(sprintf("Controller/%s.php", $className))) {
+if (file_exists(sprintf('Controller/%s.php', $className))) {
     if (class_exists($className)) {
         $controller = new $className();
         $action = $request->get('action', 'index');

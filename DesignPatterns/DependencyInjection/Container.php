@@ -9,18 +9,22 @@ class Container implements ContainerInterface
     }
 
     /**
-     * Check if container has id
+     * Check if container has id.
+     *
      * @param $id
+     *
      * @return bool
      */
     public function has($id)
     {
-        return isset($this->items[$id]) ? true: false;
+        return isset($this->items[$id]) ? true : false;
     }
 
     /**
-     * get service by id
+     * get service by id.
+     *
      * @param $id
+     *
      * @return mixed
      */
     public function get($id)
@@ -29,7 +33,8 @@ class Container implements ContainerInterface
     }
 
     /**
-     * add service to container
+     * add service to container.
+     *
      * @param $id
      * @param $service
      */

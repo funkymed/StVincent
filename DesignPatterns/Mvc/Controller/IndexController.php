@@ -2,22 +2,21 @@
 
 
 /**
- * Class IndexController
+ * Class IndexController.
  */
 class IndexController extends ControllerAbstract
 {
-
     /**
-     * Display the template index
+     * Display the template index.
      */
     public function index()
     {
-        $this->vars = ["name" => "Patrick"];
+        $this->vars = ['name' => 'Patrick'];
         $this->render('index.php');
     }
 
     /**
-     * Display the template page
+     * Display the template page.
      */
     public function page()
     {
@@ -25,16 +24,16 @@ class IndexController extends ControllerAbstract
     }
 
     /**
-     * Display the template list
+     * Display the template list.
      */
     public function list()
     {
-        $this->vars = array("items" => ["Patrick", "Claude", "Pierre", "André"]);
+        $this->vars = array('items' => ['Patrick', 'Claude', 'Pierre', 'André']);
         $this->render('list.php');
     }
 
     /**
-     * Display the template 404 not found
+     * Display the template 404 not found.
      */
     public function notfound()
     {

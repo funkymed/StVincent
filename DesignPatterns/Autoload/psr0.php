@@ -5,7 +5,7 @@
  */
 function autoload($class_name)
 {
-    $filename = sprintf("Classes/%s.php", $class_name);
+    $filename = sprintf('Classes/%s.php', $class_name);
     require_once $filename;
 }
 

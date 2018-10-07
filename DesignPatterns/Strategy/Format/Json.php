@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Class Json
+ * Class Json.
  */
 class Json implements FormatInterface
 {
-
     /**
      * @param array $data
+     *
      * @return false|string
      */
     public function convert($data)

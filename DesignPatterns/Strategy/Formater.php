@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class Formater
+ * Class Formater.
  */
 class Formater
 {
@@ -9,6 +9,7 @@ class Formater
 
     /**
      * Formater constructor.
+     *
      * @param $format
      */
     public function __construct($format)
@@ -26,17 +27,20 @@ class Formater
 
     /**
      * @param $data
+     *
      * @return false|mixed|string
      */
     public function convert($data)
     {
         switch ($this->format) {
-            case "json":
+            case 'json':
                 $json = new Json();
+
                 return $json->convert($data);
                 break;
-            case "xml":
+            case 'xml':
                 $json = new Xml();
+
                 return $json->convert($data);
                 break;
         }

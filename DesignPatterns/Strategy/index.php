@@ -1,8 +1,9 @@
 <?php
-include "Format/FormatInterface.php";
-include "Format/Json.php";
-include "Format/Xml.php";
-include "Formater.php";
+
+include 'Format/FormatInterface.php';
+include 'Format/Json.php';
+include 'Format/Xml.php';
+include 'Formater.php';
 
 $format = isset($argv[1]) ? $argv[1] : false;
 

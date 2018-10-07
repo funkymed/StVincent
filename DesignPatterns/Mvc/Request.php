@@ -1,15 +1,15 @@
 <?php
 
-require_once "SingletonAbstract.php";
+require_once 'SingletonAbstract.php';
 /**
- * Class Request
+ * Class Request.
  */
 class Request extends SingletonAbstract
 {
-
     /**
      * @param $variable
      * @param bool $fallback
+     *
      * @return bool
      */
     public function get($variable, $fallback = false)

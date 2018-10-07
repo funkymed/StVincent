@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class ControllerAbstract
+ * Class ControllerAbstract.
  */
 abstract class ControllerAbstract
 {
@@ -10,6 +10,7 @@ abstract class ControllerAbstract
 
     /**
      * ControllerAbstract constructor.
+     *
      * @param null $template_dir
      */
     public function __construct($template_dir = null)
@@ -23,14 +24,15 @@ abstract class ControllerAbstract
 
     /**
      * @param $template_file
+     *
      * @throws Exception
      */
     public function render($template_file)
     {
-        if (file_exists($this->template_dir . $template_file)) {
-            include $this->template_dir . $template_file;
+        if (file_exists($this->template_dir.$template_file)) {
+            include $this->template_dir.$template_file;
         } else {
-            throw new Exception('no template file ' . $template_file . ' present in directory ' . $this->template_dir);
+            throw new Exception('no template file '.$template_file.' present in directory '.$this->template_dir);
         }
     }
 
@@ -45,6 +47,7 @@ abstract class ControllerAbstract
 
     /**
      * @param $name
+     *
      * @return mixed|
      */
     public function __get($name)

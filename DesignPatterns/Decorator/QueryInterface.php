@@ -3,7 +3,7 @@
 interface QueryInterface
 {
     /**
-     * Returns the list of queries
+     * Returns the list of queries.
      *
      * @return array
      */

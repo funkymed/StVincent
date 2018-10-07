@@ -1,14 +1,13 @@
 <?php
 
-include "QueryInterface.php";
-include "SearchDecorator.php";
-include "Search.php";
+include 'QueryInterface.php';
+include 'SearchDecorator.php';
+include 'Search.php';
 
-include "Query/PriceQuery.php";
-include "Query/SurfaceQuery.php";
-include "Query/TypeQuery.php";
-include "Query/RegionQuery.php";
-
+include 'Query/PriceQuery.php';
+include 'Query/SurfaceQuery.php';
+include 'Query/TypeQuery.php';
+include 'Query/RegionQuery.php';
 
 $search = new Search();
 

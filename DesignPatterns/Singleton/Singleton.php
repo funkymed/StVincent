@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class Singleton
+ * Class Singleton.
  */
 class Singleton
 {
@@ -20,7 +20,7 @@ class Singleton
     public static function getInstance()
     {
         if (is_null(self::$_instance)) {
-            self::$_instance = new Singleton();
+            self::$_instance = new self();
         }
 
         return self::$_instance;

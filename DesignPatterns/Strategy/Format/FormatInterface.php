@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Interface FormatInterface
+ * Interface FormatInterface.
  */
 interface FormatInterface
 {
