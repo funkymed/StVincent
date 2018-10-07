@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+
+  php:
+    image: webdevops/php-apache-dev:7.0
+    ports:
+      - "8000:80"
+    working_dir: /app
+    volumes:
+      - .:/app
+      - .docker/apache/vhost.conf:/opt/docker/etc/httpd/vhost.conf
+      - ${PWD}/.docker/entrypoint/98-permissions.sh:/opt/docker/provision/entrypoint.d/98-permissions.sh
+    environment:
+      php.error_reporting: E_ALL
+      WEB_DOCUMENT_ROOT: /app
+      WEB_DOCUMENT_INDEX: index.php
+      COMPOSER_MEMORY_LIMIT: -1
+      PHP_MEMORY_LIMIT: 521M
+      PHP_MAX_EXECUTION_TIME: 300
+      PHP_POST_MAX_SIZE: 500M
+      PHP_UPLOAD_MAX_FILESIZE: 500M
+      PHP_DATE_TIMEZONE: Europe/Paris
+      PHP_DISPLAY_ERRORS: 1
+
+volumes:
+  db_data:
