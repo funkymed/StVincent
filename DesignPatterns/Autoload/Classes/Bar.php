@@ -1,5 +1,5 @@
 <?php
 
-class Bar {
-
+class Bar
+{
 }

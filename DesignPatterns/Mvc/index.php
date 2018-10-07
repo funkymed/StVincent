@@ -16,7 +16,7 @@ $className = UCFirst($controller) . "Controller";
 
 $rendered = false;
 
-if (file_exists(sprintf("Controller/%s.php",$className))) {
+if (file_exists(sprintf("Controller/%s.php", $className))) {
     if (class_exists($className)) {
         $controller = new $className();
         $action = $request->get('action', 'index');
@@ -27,7 +27,7 @@ if (file_exists(sprintf("Controller/%s.php",$className))) {
     }
 }
 
-if(!$rendered){
+if (!$rendered) {
     $controller = new IndexController();
     $controller->notfound();
 }

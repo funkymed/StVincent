@@ -5,7 +5,6 @@
  */
 class SingletonAbstract
 {
-
     private static $_instance = null;
 
     /**

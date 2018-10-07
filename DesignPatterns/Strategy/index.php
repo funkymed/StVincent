@@ -16,7 +16,6 @@ $data = array(
 if (!$format) {
     var_dump($data);
 } else {
-
     $formater = new Formater($format);
     $result = $formater->convert($data);
 

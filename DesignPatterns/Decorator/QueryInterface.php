@@ -8,5 +8,4 @@ interface QueryInterface
      * @return array
      */
     public function getQueries();
-
 }

@@ -2,7 +2,6 @@
 
 class Container implements ContainerInterface
 {
-
     private $items = array();
 
     public function __construct()

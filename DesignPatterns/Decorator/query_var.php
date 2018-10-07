@@ -18,9 +18,8 @@ $queries = [
 
 $search = new Search();
 
-foreach($queries as $var=>$classname)
-{
-    if(isset($_GET[$var])){
+foreach ($queries as $var=>$classname) {
+    if (isset($_GET[$var])) {
         $search = new $classname($search);
     }
 }

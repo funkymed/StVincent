@@ -2,8 +2,9 @@
 
 namespace Classes;
 
-class Test{
-    public function __construct(){
-
+class Test
+{
+    public function __construct()
+    {
     }
 }

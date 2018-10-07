@@ -34,5 +34,4 @@ class Request extends SingletonAbstract
     {
         return isset($_SERVER['REQUEST_METHOD']) ? $_SERVER['REQUEST_METHOD'] : false;
     }
-
 }

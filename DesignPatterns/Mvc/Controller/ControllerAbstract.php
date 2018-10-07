@@ -5,7 +5,6 @@
  */
 abstract class ControllerAbstract
 {
-
     protected $template_dir = 'Templates/';
     protected $vars = array();
 
