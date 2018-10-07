@@ -6,7 +6,7 @@ A bunch of examples of Design Pattern by [Cyril Pereira](cyril.pereira@gmail.com
 
 ### Autoload 
 
-__Example__ : /DesignPatterns/Autoload
+__Example__ : [DesignPatterns/Autoload](DesignPatterns/Autoload)
 
 [PSR-0](https://www.php-fig.org/psr/psr-0) (deprecated)   
 [PSR-4](https://www.php-fig.org/psr/psr-4)
@@ -14,21 +14,21 @@ __Example__ : /DesignPatterns/Autoload
 
 ### Decorator
 
-__Example__ : /DesignPatterns/Decorator
+__Example__ : [DesignPatterns/Decorator](DesignPatterns/Decorator)
 
 [Pizza by Hugo Hamon](https://bitbucket.org/hhamon/phptek-design-patterns/src/67d094faaa6e/src/Pizza/?at=master)   
 [Symfony Decoration](https://symfony.com/doc/current/service_container/service_decoration.html)
 
 ### Dependency Injection
 
-__Example__ : /DesignPatterns/DependencyInjection
+__Example__ : [DesignPatterns/DependencyInjection](DesignPatterns/DependencyInjection)
 
 [PSR-11](https://www.php-fig.org/psr/psr-11)   
 [Symfony 3.3 PSR-11 Containers](https://symfony.com/blog/new-in-symfony-3-3-psr-11-containers)
 
 ### Mvc
 
-__Example__ : /DesignPatterns/DependencyInjection
+__Example__ : [DesignPatterns/Mvc](DesignPatterns/Mvc)
 
 [smashingmagazine in 2011](https://www.smashingmagazine.com/2011/10/getting-started-with-php-templating/)   
 [More about microframework](https://medium.com/@noufel.gouirhate/create-your-own-mvc-framework-in-php-af7bd1f0ca19)   
@@ -36,13 +36,13 @@ __Example__ : /DesignPatterns/DependencyInjection
 
 ### Singleton
 
-__Example__ : /DesignPatterns/Singleton
+__Example__ : [DesignPatterns/Singleton](DesignPatterns/Singleton)
 
 [Singleton by OpenClassRoom](https://openclassrooms.com/fr/courses/26832-apprenez-a-programmer-en-java/26597-limiter-le-nombre-de-connexions)
 
 ### Strategy
 
-__Example__ : /DesignPatterns/Strategy
+__Example__ : [DesignPatterns/Strategy](DesignPatterns/Strategy)
 
 [Automobile by Php The Right Way](https://phptherightway.com/pages/Design-Patterns.html)   
 [Strategy by OpenClassRoom](https://openclassrooms.com/fr/courses/1665806-programmez-en-oriente-objet-en-php/1668103-les-design-patterns)
