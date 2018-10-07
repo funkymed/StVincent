@@ -38,10 +38,10 @@ array (size=4)
 
 #### Test each query
 
-`192.168.99.100:8000/query_var.php?surface=320`
-`192.168.99.100:8000/query_var.php?type=appartement`
-`192.168.99.100:8000/query_var.php?price=360000`
-`192.168.99.100:8000/query_var.php?region=oise`
+`192.168.99.100:8000/query_var.php?surface=320`   
+`192.168.99.100:8000/query_var.php?type=appartement`  
+`192.168.99.100:8000/query_var.php?price=360000`  
+`192.168.99.100:8000/query_var.php?region=oise`  
 
 #### Combine queries
 
