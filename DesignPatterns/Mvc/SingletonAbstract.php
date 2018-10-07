@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Class Singleton
+ * Class SingletonAbstract
  */
-class Singleton
+class SingletonAbstract
 {
 
     private static $_instance = null;
@@ -16,15 +16,13 @@ class Singleton
     }
 
     /**
-     * @return null|Singleton
+     * @return null|SingletonAbstract
      */
     public static function getInstance()
     {
-
         if (is_null(self::$_instance)) {
-            self::$_instance = new Singleton();
+            self::$_instance = new static();
         }
-
         return self::$_instance;
     }
 }
