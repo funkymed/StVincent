@@ -14,8 +14,6 @@ $router = Router::getInstance();
 
 $router->setRequest($request);
 
-$request_uri = explode('/',trim($_SERVER['REQUEST_URI']));
-
 $controller = $router->get('controller','index');
 $className = UCFirst($controller).'Controller';
 
@@ -36,3 +34,6 @@ if (!$rendered) {
     $controller = new IndexController();
     $controller->notfound();
 }
+
+
+
