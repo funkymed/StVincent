@@ -3,7 +3,7 @@ version: '3'
 services:
 
   php:
-    image: webdevops/php-apache-dev:7.0
+    image: webdevops/php-apache-dev:7.2
     ports:
       - "8000:80"
     working_dir: /app

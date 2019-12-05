@@ -5,7 +5,7 @@
  */
 class SingletonAbstract
 {
-    private static $_instance = null;
+    private static $_instances = array();
 
     /**
      * Router constructor.
@@ -19,10 +19,10 @@ class SingletonAbstract
      */
     public static function getInstance()
     {
-        if (is_null(self::$_instance)) {
-            self::$_instance = new static();
+        $class = get_called_class();
+        if (!isset(self::$_instances[$class])) {
+            self::$_instances[$class] = new $class();
         }
-
-        return self::$_instance;
+        return self::$_instances[$class];
     }
 }
