@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+
+  php:
+    image: webdevops/php-apache-dev:7.2
+    ports:
+      - "8000:80"
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      php.error_reporting: E_ALL
+      WEB_DOCUMENT_ROOT: /app
+      WEB_DOCUMENT_INDEX: index.php
+      COMPOSER_MEMORY_LIMIT: -1
+      PHP_MEMORY_LIMIT: 521M
+      PHP_MAX_EXECUTION_TIME: 300
+      PHP_POST_MAX_SIZE: 500M
+      PHP_UPLOAD_MAX_FILESIZE: 500M
+      PHP_DATE_TIMEZONE: Europe/Paris
+      PHP_DISPLAY_ERRORS: 1
+
+volumes:
+  db_data:
