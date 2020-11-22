@@ -1,4 +1,4 @@
-# Support for StVincent 2018
+# Support for StVincent 2020
 
 A bunch of examples of Design Pattern by [Cyril Pereira](cyril.pereira@gmail.com) 
 
