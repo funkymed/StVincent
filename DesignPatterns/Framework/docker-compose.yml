@@ -1,7 +1,6 @@
 version: '3'
 
 services:
-
   php:
     image: webdevops/php-apache-dev:7.2
     ports:
@@ -9,8 +8,6 @@ services:
     working_dir: /app
     volumes:
       - .:/app
-      - .docker/apache/vhost.conf:/opt/docker/etc/httpd/vhost.conf
-      - ${PWD}/.docker/entrypoint/98-permissions.sh:/opt/docker/provision/entrypoint.d/98-permissions.sh
     environment:
       php.error_reporting: E_ALL
       WEB_DOCUMENT_ROOT: /app
