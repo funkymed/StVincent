@@ -14,7 +14,8 @@ class Router extends SingletonAbstract
     const VAR_ACTION = 'action';
     const VAR_ID = 'id';
 
-    public function setRequest($request){
+    public function setRequest($request)
+    {
         $this->request = $request;
     }
 
