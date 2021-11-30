@@ -29,7 +29,8 @@ abstract class ControllerAbstract
         $this->container = $container;
     }
 
-    public function getContainer(){
+    public function getContainer()
+    {
         return $this->container;
     }
 
